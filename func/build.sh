@@ -19,6 +19,11 @@ config=${EXEC_PATH}/global.config.json
 
 inc=${CRYPTO_SRC_PATH}/fift/lib/:${CRYPTO_SRC_PATH}/smartcont/
 
+# oracle wallets
+$lite_client --global-config ${config} --cmd 'sendfile wallet_oracle1-query.boc'
+$lite_client --global-config ${config} --cmd 'sendfile wallet_oracle2-query.boc'
+$lite_client --global-config ${config} --cmd 'sendfile wallet_oracle3-query.boc'
+
 # multisig addr
 $func -o multisig-code.fif -SPA stdlib.fc multisig-code.fc
 multisig_addr=$($fift -I ${inc} -s new-multisig.fif -1 3 $(date +%s) testnet-bsc-wallet 2 uf_public_keys_testnet)
