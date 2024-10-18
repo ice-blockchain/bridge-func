@@ -26,7 +26,7 @@ $lite_client --global-config ${config} --cmd 'sendfile wallet_oracle3-query.boc'
 
 # multisig addr
 $func -o multisig-code.fif -SPA stdlib.fc multisig-code.fc
-multisig_addr=$($fift -I ${inc} -s new-multisig.fif -1 3 $(date +%s) testnet-bsc-wallet 2 uf_public_keys_testnet)
+multisig_addr=$($fift -I ${inc} -s new-multisig.fif -1 3 1729232301 testnet-bsc-wallet 2 uf_public_keys_testnet)
 $lite_client --global-config ${config} --cmd 'sendfile testnet-bsc-wallet-create.boc'
 
 # collector addr
