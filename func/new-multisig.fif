@@ -44,12 +44,7 @@ dictnew 0 pubkeys {
 
 { $>B crc16 0xffff and 0x10000 or } : method_id
 
-wallet-id
-n
-k
-owner_infos
-spend-delay
-"create_init_state" method_id code <s <b b> runvm 2drop constant storage
+<b wallet-id 32 u, n 8 u, k 8 u, 0 64 u, owner_infos ref, dictnew dict, spend-delay 32 u, b> constant storage
 
 code storage null <b b{0011} s, 3 roll ref, rot ref, swap dict, b> constant StateInit
 
