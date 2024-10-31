@@ -44,9 +44,9 @@ dictnew 0 pubkeys {
 
 { $>B crc16 0xffff and 0x10000 or } : method_id
 
-<b wallet-id 32 u, n 8 u, k 8 u, 0 64 u, owner_infos ref, dictnew dict, spend-delay 32 u, b> constant storage
+<b wallet-id 32 u, n 8 u, k 8 u, 0 64 u, owner_infos dict, dictnew dict, spend-delay 32 u, b> constant storage
 
-code storage null <b b{0011} s, 3 roll ref, rot ref, swap dict, b> constant StateInit
+<b b{00110} s, code ref, storage ref, b> constant StateInit
 
 StateInit hashu wc swap 2dup 2constant wallet_addr
 ."new wallet address = " 2dup .addr cr
