@@ -7,11 +7,11 @@
 }>c constant code
 
 <b 0 8 u,
-   100000000000 Gram,
+   0 Gram,
    0 "build-collector.fif" include hashu Addr,
-   200000000 Gram,
-   300000000 Gram,
-   5 14 u,
+   750000000 Gram,
+   1100000000 Gram,
+   1 14 u,
    97 8 u, // chain_id, so that the address is not the same for different networks
 b> constant storage
 

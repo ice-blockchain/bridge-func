@@ -6,11 +6,11 @@ Multisig compiled by `func-0.3.0` (!)
 
 func -o multisig-code.fif -SPA stdlib.fc multisig-code.fc
 
-fift -s new-multisig.fif -1 97 1729232301 testnet-bsc-new 2 uf_public_keys_testnet
+fift -s new-multisig.fif -1 97 1733473200 testnet-bsc-new 2 uf_public_keys_testnet
 
-new wallet address = -1:e68ab8938906386ef633d5657e0f6b5ecc9147c5379160568b882ec67805291d
-Non-bounceable address (for init): 0f_miriTiQY4bvYz1WV-D2tezJFHxTeRYFaLiC7GeAUpHTyN
-Bounceable address (for later access): kf_miriTiQY4bvYz1WV-D2tezJFHxTeRYFaLiC7GeAUpHWFI
+new wallet address = -1:80445c4c27901e7004052685dfe873999b520c025146c85deb12497a197aebff
+Non-bounceable address (for init): 0f-ARFxMJ5AecAQFJoXf6HOZm1IMAlFGyF3rEkl6GXrr_-nG
+Bounceable address (for later access): kf-ARFxMJ5AecAQFJoXf6HOZm1IMAlFGyF3rEkl6GXrr_7QD
 __________________________________________________________________________
 
 Collector compiled by `func-0.0.99`
@@ -30,11 +30,11 @@ func -o bridge_code2.fif -SPA stdlib.fc text_utils.fc message_utils.fc bridge-co
 
 fift -s new-bridge.fif
 
-new bridge address = -1:c00f2ec17d36f0fb415eabca58c83499b8d051020b4ed78295d887b2a7bdd0ef
-Non-bounceable address (for init): Uf_ADy7BfTbw-0Feq8pYyDSZuNBRAgtO14KV2Ieyp73Q796Y
-Bounceable address (for later access): Ef_ADy7BfTbw-0Feq8pYyDSZuNBRAgtO14KV2Ieyp73Q74Nd
+new bridge address = -1:c89126ec62932ff193ba5c532c7c8a2a4e7f4e49103e054e7eacac4887fc5f63
+Non-bounceable address (for init): Uf_IkSbsYpMv8ZO6XFMsfIoqTn9OSRA-BU5-rKxIh_xfYxo2
+Bounceable address (for later access): Ef_IkSbsYpMv8ZO6XFMsfIoqTn9OSRA-BU5-rKxIh_xfY0fz
 
 __________________________________________________________________________
 Config72:
 
-fift -s build-config71.fif Ef_ADy7BfTbw-0Feq8pYyDSZuNBRAgtO14KV2Ieyp73Q74Nd kf_miriTiQY4bvYz1WV-D2tezJFHxTeRYFaLiC7GeAUpHWFI 0x1B615Fb55d329b19C2d3f56943a1D972EFc717a3 -1:5fc2c9192c4b860df613440b6fb7d93e984764688b249143ac1303f0d70cd793 0xe54cd631c97be0767172ad16904688962d09d2fe -1:233f3ae14d89682a04c2b0680414dc7b39d1feb09f7c7ad267c2b2154ac1711f 0xeb05e1b6ac0d574ef2cf29fdf01cc0ba3d8f9bf1 -1:9fc4608fb8f28d47a4f819c171350b8b5394f290b28402d9315847c0d70056cb 0xf636f40ebe17fb2a1343e5eeee9d13aa90888b51 -o bsc-testnet-config71.boc
+fift -s build-config71.fif Ef_IkSbsYpMv8ZO6XFMsfIoqTn9OSRA-BU5-rKxIh_xfY0fz kf-ARFxMJ5AecAQFJoXf6HOZm1IMAlFGyF3rEkl6GXrr_7QD 0x1B615Fb55d329b19C2d3f56943a1D972EFc717a3 -1:5fc2c9192c4b860df613440b6fb7d93e984764688b249143ac1303f0d70cd793 0xe54cd631c97be0767172ad16904688962d09d2fe -1:233f3ae14d89682a04c2b0680414dc7b39d1feb09f7c7ad267c2b2154ac1711f 0xeb05e1b6ac0d574ef2cf29fdf01cc0ba3d8f9bf1 -1:9fc4608fb8f28d47a4f819c171350b8b5394f290b28402d9315847c0d70056cb 0xf636f40ebe17fb2a1343e5eeee9d13aa90888b51 -o bsc-testnet-config72.boc
