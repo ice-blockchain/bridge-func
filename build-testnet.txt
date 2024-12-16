@@ -30,9 +30,9 @@ func -o bridge_code2.fif -SPA stdlib.fc text_utils.fc message_utils.fc bridge-co
 
 fift -s new-bridge.fif
 
-new bridge address = -1:c89126ec62932ff193ba5c532c7c8a2a4e7f4e49103e054e7eacac4887fc5f63
-Non-bounceable address (for init): Uf_IkSbsYpMv8ZO6XFMsfIoqTn9OSRA-BU5-rKxIh_xfYxo2
-Bounceable address (for later access): Ef_IkSbsYpMv8ZO6XFMsfIoqTn9OSRA-BU5-rKxIh_xfY0fz
+new bridge address = -1:cd76376c803e52ee14228d55c1ac6188ea6aa9f5d6674e82420fc0b39053b002
+Non-bounceable address (for init): Uf_NdjdsgD5S7hQijVXBrGGI6mqp9dZnToJCD8CzkFOwAqhO
+Bounceable address (for later access): Ef_NdjdsgD5S7hQijVXBrGGI6mqp9dZnToJCD8CzkFOwAvWL
 
 __________________________________________________________________________
 Config72:
