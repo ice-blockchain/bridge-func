@@ -18,7 +18,7 @@ inc=${CRYPTO_SRC_PATH}/fift/lib/:${CRYPTO_SRC_PATH}/smartcont/
 
 # multisig addr
 $func -o multisig-code.fif -SPA stdlib.fc multisig-code.fc
-multisig_addr=$($fift -I ${inc} -s new-multisig.fif -1 97 1733748500 testnet-bsc-wallet 7 uf_public_keys_testnet)
+multisig_addr=$($fift -I ${inc} -s new-multisig.fif -1 56 1736752372 mainnet-bsc-wallet 7 uf_public_keys_mainnet)
 
 # collector addr
 $func -o votes-collector.fif -SPA stdlib.fc message_utils.fc bridge-config.fc votes-collector.fc
@@ -31,10 +31,10 @@ bridge_addr=$($fift -I ${inc} -s new-bridge.fif)
 # config72
 readarray -d ":" -t array_addr_bridge <<< "$bridge_addr"
 readarray -d ":" -t array_addr_multisig <<< "$multisig_addr"
-readarray -t oracles < testnet-bsc-oracles.txt
+readarray -t oracles < mainnet-bsc-oracles.txt
 
 $fift -I ${inc} -s build-config71.fif \
                     ${array_addr_bridge[-1]:0:49} \
                     ${array_addr_multisig[-1]:0:49} \
                     ${oracles[@]} \
-                    -o testnet-bsc-config72
+                    -o mainnet-bsc-config72

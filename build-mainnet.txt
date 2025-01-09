@@ -1,0 +1,40 @@
+__________________________________________________________________________
+bsc_testnet tag
+__________________________________________________________________________
+
+Multisig compiled by `func-0.3.0` (!)
+
+func -o multisig-code.fif -SPA stdlib.fc multisig-code.fc
+
+fift -s new-multisig.fif -1 56 1736752372 mainnet-bsc-wallet 7 uf_public_keys_mainnet
+
+new wallet address = -1:3bea6fc167455a701af9d6b96ae755d2b70900629a848b0024916e745d647ffe
+Non-bounceable address (for init): 0f876m_BZ0VacBr51rlq51XStwkAYpqEiwAkkW50XWR__pNB
+Bounceable address (for later access): kf876m_BZ0VacBr51rlq51XStwkAYpqEiwAkkW50XWR__s6E
+__________________________________________________________________________
+
+Collector compiled by `func-0.0.99`
+
+func -o votes-collector.fif -SPA stdlib.fc message_utils.fc bridge-config.fc votes-collector.fc
+
+fift -s new-collector.fif
+
+new collector address = 0:e55b5d903533651a9fade2619df26befdd7ad1586463ef7a167417109493ffce
+Non-bounceable address (for init): UQDlW12QNTNlGp-t4mGd8mvv3XrRWGRj73oWdBcQlJP_zsfE
+Bounceable address (for later access): EQDlW12QNTNlGp-t4mGd8mvv3XrRWGRj73oWdBcQlJP_zpoB
+
+__________________________________________________________________________
+Bridge compiled by `func-0.0.99`
+
+func -o bridge_code2.fif -SPA stdlib.fc text_utils.fc message_utils.fc bridge-config.fc bridge_code.fc
+
+fift -s new-bridge.fif
+
+new bridge address = -1:0f4a74ee8173ea492f4782b11676b535c8ea32db01f8a826aab19842695d8748
+Non-bounceable address (for init): Uf8PSnTugXPqSS9HgrEWdrU1yOoy2wH4qCaqsZhCaV2HSIEw
+Bounceable address (for later access): Ef8PSnTugXPqSS9HgrEWdrU1yOoy2wH4qCaqsZhCaV2HSNz1
+
+__________________________________________________________________________
+Config72:
+
+fift -s build-config71.fif Ef8PSnTugXPqSS9HgrEWdrU1yOoy2wH4qCaqsZhCaV2HSNz1 kf876m_BZ0VacBr51rlq51XStwkAYpqEiwAkkW50XWR__s6E 0x1B31606fcb91BaE1DFFD646061f6dD6FB35D0Bb5 $oracles -o bsc-mainnet-config72.boc
